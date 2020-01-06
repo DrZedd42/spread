@@ -25,9 +25,8 @@ def get_bid_ask_for_coin(coin,pairs,client)
 end 
 client = Cryptoexchange::Client.new
 bipairs = client.pairs('binance')
-kupairs = client.pairs('kucoin')
 biboxpairs = client.pairs('bibox')
-pairs = [['binance',bipairs],['kucoin',kupairs],['bibox',biboxpairs]]
+pairs = [['binance',bipairs],['bibox',biboxpairs]]
 json_results = []
 results = []
 json_lastLoad = 0
